@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myportfolio</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- **************fond-style*** -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet" />
+    <!-- **************icons*** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- **************jquery*** -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- --------------typing------- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+</head>
+
+<body id="body">
+    <section id="HOME">
+        <div id="container-nav">
+            <img class="bg-img" src="./assets/background-home1.jpg" alt="">
+            <nav id="sidebar" onclick="oneclick()" ondblclick="dblclick()">
+                <img id="darkmode" src="./assets/Moon.gif" onclick="darkMode()">
+                <div class="profile">
+                    <img class="profile-pic" src="./assets/Profile.jpg" />
+                    <h1>Dheeraj R S</h1>
+                </div>
+                <div class="contacts">
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-skype"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <ul>
+                    <li>
+                        <span class="fa-solid fa-house-user fa-lg"></span><a href="#HOME">&nbsp; Home</a>
+                    </li>
+                    <li>
+                        <span class="fa-regular fa-user fa-lg"></span><a href="#ABOUT">&nbsp;&nbsp; About</a>
+                    </li>
+                    <!-- <li>
+                        <span class="fa-regular fa-file fa-lg"></span><a href="#RESUME">&nbsp;&nbsp; Resume</a>
+                    </li> -->
+                    <li>
+                        <span class="fa-regular fa-address-card fa-lg"></span><a href="#PORTFILO">&nbsp; Portfolio</a>
+                    </li>
+                    <li>
+                        <span class="fa-solid fa-server fa-lg"></span><a href="#SERVICES">&nbsp; Services</a>
+                    </li>
+                    <li>
+                        <span class="fa-regular fa-envelope fa-lg"></span><a href="#CONTACT">&nbsp; Contact</a>
+                    </li>
+                    <div class="copyright-nav">
+                        <p>
+                            © Copyright <span>Personal Website</span><br />Designed by
+                            <a href="">Dheeraj R S</a>
+                        </p>
+                    </div>
+                </ul>
+            </nav>
+            <h1 class="head-txt1"><span class="name"> Dheeraj R S </span></h1>
+            <h1 class="head-txt2">I'm <span class="typing"></span></h1>
+            <i id="open-bar" class="fa-solid fa-bars f" onclick="openmenu()"></i>
+            <i id="close-bar" class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            <i id="scroll-top" class="fa-solid fa-arrow-up home" onclick="topFunction()"></i>
+
+    </section>
+
+    <section id="ABOUT">
+        <div class="container-about">
+            <div class="container-row">
+
+                <div class="about-col-1">
+
+
+                    <img class="about-img" src="/assets/Profile.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        ipsum dolor, sit amet consectetur adipisicing elit.Explicabo officiis itaque quos
+                        consectetur error voluptate officia.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br> Designing web/app inter faceces</li>
+                            <li><span>Web Development</span><br> Web app Development</li>
+                            <li><span>App Development</span><br> Building android/ioc apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="experience">
+                        <ul>
+                            <li><span>2022 - current</span><br> Designing web/app inter faceces</li>
+                            <li><span>2020 - 2022</span><br> Web app Development</li>
+                            <li><span>2018 - 2020</span><br> Building android/ioc apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018</span><br> Designing web/app inter faceces</li>
+                            <li><span>2018</span><br> Web app Development</li>
+                            <li><span>2016</span><br> Building android/ioc apps</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="PORTFILO">
+        <div class="container-portfolio">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/assets/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/assets/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/assets/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+
+    </section>
+
+
+
+    <section id="SERVICES">
+        <div class="container-service">
+            <h1 class="sub-title">My Services</h1>
+            <div class="sevices-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit quam accusamus dicta animi!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis error corrupti quod !</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. incidunt recusandae, !</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="CONTACT">
+        <div class="container-contact">
+           
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 8086022295</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" download="/background6.png" class="btn btn2 bt">Download CV</class=></a>
+                </div>
+
+
+
+
+
+
+                <div class="signup-box " id="contact-right">
+
+                    <form name="submit-to-google-sheet" id="suForm">
+                        <input type="text" placeholder="Full name" name="Name" id="name" onclick="resetBtn()"
+                            maxlength="30">
+                        <input type="text" placeholder="Email" name="Email" id="email" onclick="resetBtn()">
+                        <textarea name="Message" cols="30" rows="6" placeholder="Your Message" id="txtmsg"
+                            onclick="resetBtn()"></textarea>
+
+                        <input type="submit" id="submit-btn" value="Sign Up" onmouseover="mouseOver()">
+
+
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+
+
+
+
+
+           
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Personal Website. Made wtih <i class="fa-solid fa-heart"></i> by Dheeraj.</p>
+        </div>
+    </section>
+
+
+    <script src="/js/app.js"></script>
+
+</body>
+
+</html>
